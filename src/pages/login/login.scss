@@ -8,6 +8,10 @@
 		height: 700px;
 		border: 1px solid #efefef;
 
+		@media only screen and (max-width: 600px) {
+			width: 100%;
+		}
+
 		.login-header {
 			height: 60px;
 			background: #007bc6;

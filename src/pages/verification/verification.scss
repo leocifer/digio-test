@@ -8,6 +8,10 @@
 		height: 700px;
 		border: 1px solid #efefef;
 
+		@media only screen and (max-width: 600px) {
+			width: 100%;
+		}
+
 		.verification-header {
 			height: 80px;
 			border-bottom: 1px solid #efefef;
@@ -29,8 +33,17 @@
 					display: flex;
 					justify-content: center;
 					align-items: center;
+
+					@media only screen and (max-width: 600px) {
+						flex-flow: column;
+					}
+
 					.aadhar-img {
 						margin-right: 20px;
+
+						@media only screen and (max-width: 600px) {
+							margin-bottom: 20px;
+						}
 						img {
 							height: 50px;
 						}
@@ -77,6 +90,9 @@
 					display: flex;
 					justify-content: space-evenly;
 					align-items: center;
+					@media only screen and (max-width: 600px) {
+						padding: 0;
+					}
 					input {
 						height: 40px;
 						border-radius: 0;
