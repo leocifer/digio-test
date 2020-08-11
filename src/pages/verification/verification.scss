@@ -1,0 +1,100 @@
+.verification {
+	display: flex;
+	background: white;
+	.verification-container {
+		display: flex;
+		flex-flow: column;
+		width: 600px;
+		height: 700px;
+		border: 1px solid #efefef;
+
+		.verification-header {
+			height: 80px;
+			border-bottom: 1px solid #efefef;
+			display: flex;
+			padding: 0 20px;
+			justify-content: flex-start;
+			align-items: center;
+			font-size: 24px;
+			font-weight: bold;
+		}
+
+		.verification-body {
+			display: flex;
+			flex-flow: column;
+			height: 100%;
+			padding: 50px;
+			.validate-aadhar {
+				form {
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					.aadhar-img {
+						margin-right: 20px;
+						img {
+							height: 50px;
+						}
+					}
+					.aadhar-form {
+						display: flex;
+						width: 100%;
+						justify-content: space-evenly;
+						input {
+							height: 40px;
+							border-radius: 0;
+						}
+						button {
+							height: 46px;
+							border-radius: 0;
+							padding: 0 20px;
+							background: #efefef;
+							border: none;
+							cursor: not-allowed;
+							transition: 200ms all ease-in-out;
+							&:enabled {
+								cursor: pointer;
+								background: #eee;
+							}
+						}
+					}
+				}
+				.agree-check {
+					margin-top: 10px;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					font-size: 14px;
+					input {
+						margin-right: 5px;
+					}
+				}
+			}
+
+			.validate-otp {
+				form {
+					margin-top: 50px;
+					padding: 0 50px;
+					display: flex;
+					justify-content: space-evenly;
+					align-items: center;
+					input {
+						height: 40px;
+						border-radius: 0;
+					}
+					button {
+						height: 46px;
+						border-radius: 0;
+						padding: 0 20px;
+						border: none;
+						cursor: not-allowed;
+						transition: 200ms all ease-in-out;
+						&:enabled {
+							cursor: pointer;
+							background: #eee;
+						}
+					}
+				}
+			}
+		}
+	}
+}
